@@ -9,10 +9,23 @@
     <TextView
         android:layout_row="0"
         android:layout_column="0"
-        android:layout_columnSpan="2"
+        android:layout_columnSpan="3"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
         android:text="Droid Desserts" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_row="1"
+        android:layout_column="2"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        app:srcCompat="@drawable/frozenyogurt"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
 
     <ImageView
         android:layout_row="1"
@@ -20,9 +33,7 @@
         android:id="@+id/imgDonuts"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:srcCompat="@drawable/imdonuts"
-        app:civ_border_width="2dp"
-        app:civ_border_color="#FF000000"/>
+        app:srcCompat="@drawable/imdonuts" />
 
     <ImageView
         android:layout_row="2"
